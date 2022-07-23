@@ -1,0 +1,255 @@
+/*HEADER*/
+
+/*----------------------------*\
+	Logo
+\*----------------------------*/
+
+#header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #15161D;
+}
+
+.header-logo {
+    padding: 16px 0px;
+    float: left;
+}
+
+.header-logo .logo img {
+    display: block;
+}
+
+/*----------------------------*\
+      Search
+  \*----------------------------*/
+
+.header-search {
+    padding: 15px 0px;
+}
+
+.header-search .input-select {
+    border-radius: 40px 0px 0px 40px;
+    flex: 0;
+}
+
+.header-search .input {
+    border-radius: 40px 0px 0px 40px;
+    flex: 1;
+}
+
+.header-search .search-btn {
+    height: 40px;
+    width: 100px;
+    background: #D10024;
+    color: #FFF;
+    font-weight: 700;
+    border: none;
+    border-radius: 0px 40px 40px 0px;
+    flex: 0 0 100px;
+}
+
+#advisory-wp{
+    position: relative;
+    padding: 15px 15px 15px 50px;
+}
+#advisory-wp:before{
+    position: absolute;
+    content: '\f2a0';
+    font-family: 'FontAwesome';
+    top: 50%;
+    left: 0px;
+    font-size: 21px;
+    color: #fff;
+    width: 38px;
+    height: 38px;
+    line-height: 35px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+#advisory-wp span{
+    position: relative;
+    display: block;
+    color: #fff;
+}
+#advisory-wp .title{ font-size: 15px;}
+#advisory-wp .phone{ font-family: 'Roboto Bold'; font-size: 16px;}
+
+/* ======================================== Cart =========================================== */
+
+#cart-wp,
+#cart-respon-wp {
+    position: relative;
+    display: block;
+    color: #fff;
+    padding: 20px 15px 20px 15px;
+}
+
+#cart-wp a{
+    color: white;
+}
+
+#cart-wp i,
+#cart-respon-wp i {
+    font-size: 20px;
+    width: 37px;
+    height: 37px;
+    line-height: 33px;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+#cart-wp #num,
+#cart-respon-wp #num {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 10px;
+    color: #FFF;
+    background-color: #D10024;
+}
+
+#cart-respon-wp {
+    display: none;
+}
+
+#cart-wp {
+    position: relative;
+    cursor: pointer;
+}
+
+/* ===================================== Dropdown ======================================= */
+
+#cart-wp #dropdown {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 250px;
+    background: #fff;
+    border: 1px solid #e1e1e1;
+    transition: all .3s ease;
+    z-index: 5;
+}
+
+#cart-wp:hover #dropdown {
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+}
+
+#cart-wp .cart-info{
+    padding: 10px 10px 0px 10px;
+}
+
+#cart-wp .list-cart li{
+    margin-bottom: 10px;
+}
+
+#cart-wp .list-cart li:last-child {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+
+#cart-wp .list-cart .thumb {
+    width: 25%;
+}
+
+#cart-wp .list-cart .info {
+    width: 75%;
+    padding-left: 15px;
+}
+
+#cart-wp #dropdown .desc {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+#cart-wp #dropdown .desc span {
+    color: #D10024;
+}
+
+#cart-wp #dropdown .list-cart .product-name {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#cart-wp #dropdown .list-cart .price {
+    display: block;
+    font-size: 14px;
+    color: #D10024;
+    font-weight: bold;
+}
+
+#cart-wp #dropdown .list-cart .qty {
+    display: block;
+    font-size: 13px;
+    color: #999;
+}
+
+#cart-wp #dropdown .total-price span.title {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #333;
+    line-height: normal;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+}
+#cart-wp #dropdown .total-price span.price {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    line-height: normal;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#cart-wp #dropdown .action-cart a {
+    display: block;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: auto;
+}
+
+#cart-wp #dropdown .action-cart a.view-cart {
+    background: #1e1f29;
+    flex: 0 0 50%;
+    text-align: center;
+    color: #fff;
+}
+
+#cart-wp #dropdown .action-cart a.checkout {
+    background: #D10024;
+    flex: 0 0 50%;
+    text-align: center;
+    color: #fff;
+}
+
+#cart-wp #dropdown .action-cart a.view-cart:hover {
+    background: #2B2D42;
+}
+
+#cart-wp #dropdown .action-cart a.checkout:hover {
+    background: #E21135;
+}
+
+
+
+

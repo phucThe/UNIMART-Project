@@ -1,0 +1,92 @@
+/*BLOG*/
+.blog-page #selling-wp {
+    margin-top: 0 !important;
+}
+
+.blog-page #list-blog-wp .section-title {
+    font-size: 21px;
+    text-transform: uppercase;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+#list-blog-wp .list-item li {
+    padding-bottom: 50px;
+}
+
+#list-blog-wp .list-item li:last-child {
+    padding-bottom: 0;
+}
+
+#list-blog-wp .thumb{
+    display: block;
+    width: 30%;
+    height: 160px;
+}
+
+#list-blog-wp .thumb img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#list-blog-wp .post-info {
+    width: 70%;
+    padding-left: 25px;
+}
+
+#list-blog-wp .post-info .title {
+    display: block;
+    font-size: 18px;
+    /* line-height: 30px; */
+    padding-bottom: 5px;
+    text-transform: uppercase;
+
+}
+
+#list-blog-wp .list-item li:hover .post-info .title{
+    color: #d10024;
+}
+
+#list-blog-wp .post-info .create-date {
+    position: relative;
+    display: block;
+    font-size: 13px;
+    color: #989898;
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+
+#list-blog-wp .post-info .create-date:before {
+    position: absolute;
+    content: '\f017';
+    font-family: 'FontAwesome';
+    top: 0;
+    left: 0;
+    font-size: 14px;
+}
+
+#list-blog-wp .post-info .desc {
+    line-height: 26px;
+    color: #3f3f3f;
+    text-align: justify;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -moz-line-clamp: 3;
+    -o-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -o-box-orient: vertical;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+
+/* ============================== POST ================================= */
+#main-content-wp .blog-content {
+    width: 75%;
+    margin-right: 2%;
+}
+
+
+

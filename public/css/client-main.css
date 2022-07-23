@@ -1,0 +1,15 @@
+/*STYLE*/
+@import 'import/fonts.css';
+@import 'import/global.css';
+@import 'import/header.css';
+@import 'import/footer.css';
+@import 'import/home.css';
+@import 'import/category_product.css';
+@import 'import/blog.css';
+@import 'import/detail_product.css';
+@import 'import/detail_blog.css';
+@import 'import/cart.css';
+@import 'import/checkout.css';
+@import 'import/navigation.css';
+
+

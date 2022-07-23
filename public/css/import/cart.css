@@ -1,0 +1,92 @@
+/*RESET BOOTSTRAP*/
+.table{ margin-bottom: 0!important;}
+.table thead{ border-top: 1px solid #ddd;}
+.table>tfoot>tr>td{ border-top: none!important;}
+.table tbody{ background: #fff;}
+
+/*CART*/
+.cart-page #main-content .section:nth-child(2){ padding-top: 0!important;}
+.cart-page #main-content{
+    width: 100%!important;
+    padding-right: 0!important;
+}
+
+#info-cart-wp table tr td{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#info-cart-wp table thead{
+    border-bottom: 3px solid #d10024;
+}
+
+#info-cart-wp table thead tr td{
+    font-size: 14px;
+    line-height: normal;
+    text-transform: uppercase;
+    padding: 18px 20px;
+    background-color: #15161D;
+    font-weight: bold;
+    color: #fff;
+    border: 0;
+}
+#info-cart-wp table tbody tr td{
+    color: #222;
+    padding: 10px 0px;
+}
+#info-cart-wp table tbody tr td .num-order{
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+#info-cart-wp table tbody tr td .thumb{
+    display: inline-block;
+    width: 100px;
+    min-height: 100px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
+
+#info-cart-wp table tbody tr td .del-product{
+    padding: 4px 8px;
+    border:1px solid #e4e7ed;
+    color: #15161D;
+}
+
+#info-cart-wp table tbody tr td .del-product:hover{
+    border-color: #D10024;
+    color: #D10024;
+}
+
+#cart-wp table tfoot tr td #action-cart a:nth-child(2){ margin-right: 0;}
+#total-price{
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 25px 0px 20px 0px;
+}
+#total-price span{
+    color: #D10024;
+    font-size: 18px;
+    font-weight: 700;
+}
+#action-cart-wp{ margin-top: 30px;}
+#action-cart-wp .title{ margin-bottom: 10px; line-height: 24px;}
+#action-cart-wp .section-detail .title span{
+    font-weight: normal;
+}
+#action-cart-wp a{
+    display: inline-block;
+    color: #D10024;
+    line-height: 21px;
+    text-decoration: underline!important;
+}
+#action-cart-wp #buy-more{ margin-bottom: 5px;}
+#info-cart-wp table tfoot tr td{ padding: 0px;}
+.table>tbody>tr>th, .table>tbody>tr>td{ border-bottom: 1px solid #ddd;}
+
+.empty-cart-icon{
+    font-size: 100px;
+}

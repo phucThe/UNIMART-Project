@@ -1,0 +1,381 @@
+
+/*RESPONSIVE*/
+@media screen and (max-width: 1170px){
+    .wp-inner{ width: 100%; padding-left: 10px; padding-right: 10px;}
+}
+
+@media screen and (max-width: 1080px){
+    /*HEADER*/
+    #head-body #search-wp{ padding: 22px 0px 22px 90px;}
+    #advisory-wp{ display: none;}
+    #cart-wp{ margin-left: 10px;}
+
+    #btn-respon{ display: none;}  /* !important */
+
+    #site{ position: relative; overflow: hidden;}
+    #container{ position: relative; right: 0px; transition: all .5s ease; -moz-transition: all .5s ease; -webkit-transition: all .5s ease; -o-transition: all .5s ease;}
+
+    /* ======================================== Menu Reponsive ======================================== */
+
+    #menu-responsive{
+        display: block;
+        position: absolute;
+        top: 0px;
+        right: -100%;
+        transition: all .5s ease;
+    }
+
+    #menu-responsive.active{
+        /* display: block; */
+        top: 0px;
+        right: 0px;
+        width: 100%;
+        height: 100vh;
+        /* background: #fff; */
+        background-color: #15161D;
+        z-index: 5;
+        transition: all .5s ease;
+    }
+
+    #menu-responsive .menu-top{
+        /* background-color: #15161D; */
+        background-color: #1E1F29;
+        /* background-color: #f7f7f7; */
+        /* border-bottom:3px solid #E4E7ED; */
+        text-transform: uppercase;
+        display: flex;
+        justify-content: space-between;
+        font-size: 28px;
+    }
+
+    #menu-responsive .menu-top .logo a{
+        color: #fff;
+        display: block;
+        padding: 15px;
+        font-weight: 700;
+    }
+
+    #menu-responsive .menu-top .respon-btn{
+        background-color: transparent;
+        outline: none;
+        border: none;
+        color: #fff;
+        padding: 15px;
+    }
+
+    #menu-responsive .menu-body .menu-list li{
+        position: relative;
+        border-top: 1px solid #1f212a;
+    }
+
+    #menu-responsive .menu-body .menu-list li a{
+        display: block;
+        padding: 8px 20px;
+        color: #fff;
+
+    }
+
+    #menu-responsive .menu-body .menu-list li a::after{
+        content: "";
+        display: block;
+        width: 0%;
+        height: 2px;
+        background-color: #D10024;
+        transition: 0.2s all;
+    }
+
+    #menu-responsive .menu-body .menu-list li:hover>a,
+    #menu-responsive .menu-body .menu-list li:hover>.responsive-menu-toggle i{
+        color: #D10024;
+    }
+
+    #menu-responsive .menu-body .menu-list li:hover>a::after{
+        width: 100%;
+    }
+
+    #menu-responsive .menu-body .menu-list li .responsive-menu-toggle{
+        position: absolute;
+        padding: 8px;
+        padding-left: 20px;
+        top: 0px;
+        right: 15px;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        color: #fff;
+    }
+
+    #menu-responsive .menu-body .menu-list li .sub-menu{
+        display: none;
+        background-color: #181924;
+    }
+
+    #menu-responsive .menu-body .menu-list li>.sub-menu.active{
+        display: block;
+    }
+
+    #menu-responsive .menu-body .menu-list li .sub-menu li{
+        padding-left: 15px;
+    }
+
+    /* ============================================= Cart ================================================= */
+
+    #cart-wp{ display: none;}
+    #cart-respon-wp{ display: block;}
+    /*MAIN CONTENT*/
+
+    .sidebar{ display: none;}
+    .main-content{ width: 100%; float: none; margin-left: 0;}
+    /*DETAIL PRODUCT*/
+    .thumb-wp{ display: none;}
+    .thumb-respon-wp{ display: block;}
+
+    /* BLOG  */
+
+    #main-content-wp .blog-content {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    #footer .box.about-us {
+        padding-right: 15px;
+    }
+
+    /*CHECK OUT*/
+    #to-checkout-wp .shop-table tbody tr td{ white-space: nowrap;}
+}
+
+@media screen and (max-width: 800px){
+    /*HEADER*/
+
+    #btn-respon{ display: block; font-size: 21px; padding: 27px 15px; color: #fff; cursor: pointer;} /* !important */
+
+    #advisory-wp{ display: none;}
+    #head-body #logo{ padding: 25px 0px; font-size: 28px;}
+    #cart-wp i{ font-size: 18px;}
+
+    /* NAV BAR  */
+
+    #navigation-wp{
+        display: none;
+    }
+
+    /*MAIN CONTENT*/
+
+    /* PRODUCT-CARDS */
+    .product-cards>.product-container{
+        width: calc(33% - 5px);
+    }
+
+    /* PRODUCT CATEGORIES PRODUCT CARDS  */
+
+    #list-product-wp .product-cards {
+        margin-left: -1%;
+    }
+
+    #list-product-wp .product-container {
+        width: 32%;
+        margin-left: 1%;
+    }
+
+    #list-product-wp .section-detail .list-item li{ width: 32.666666666666664%; margin-right: 1%;}
+    #list-product-wp .section-detail .list-item li:nth-child(4n){ margin-right: 1%!important;}
+    #list-product-wp .section-detail .list-item li:nth-child(3n){ margin-right: 0}
+
+    /*DETAIL PRODUCT*/
+    #detail-product-wp .info{ padding-left: 25px;}
+    #detail-product-wp .info .product-name{ line-height: normal;}
+
+    /*FOOTER*/
+
+    #footer .box.logo-footer {
+        margin-bottom: 30px;
+    }
+
+    #footer .box .box-body {
+        padding-top: 0px;
+        font-size: 14px;
+    }
+
+    #footer .box.about-us {
+        padding-right: 15px;
+        margin-bottom: 30px;
+    }
+
+    /*CART*/
+    .table-responsive{ width: 100%; margin-bottom: 15px; overflow-y: hidden; -ms-overflow-style: -ms-autohiding-scrollbar; border: 1px solid #ddd;}
+    .table-responsive>.table>thead>tr>th, .table-responsive>.table>tbody>tr>th, .table-responsive>.table>tfoot>tr>th, .table-responsive>.table>thead>tr>td, .table-responsive>.table>tbody>tr>td, .table-responsive>.table>tfoot>tr>td{ white-space: nowrap; display: table-cell; vertical-align: middle;}
+    .cart-page #cart-wp table thead tr td{ font-size: 13px;}
+    .cart-page #to-checkout-wp table{ margin: 15px 0px;}
+    .cart-page #cart-wp table tfoot tr td #actions-cart a{ font-size: 12px; padding: 0px 15px;}
+    .cart-page #to-checkout{ width: 50%; padding: 30px 15px;}
+    /*CHECK OUT*/
+    #customer-info-wp .form-row{ padding-bottom: 15px;}
+    .checkout-page #main-content .section:nth-child(2){ padding-left: 20px;}
+    #customer-info-wp .form-row .form-col{ padding-right: 10px;}
+}
+
+@media screen and (max-width: 600px){
+    /*HEADER*/
+    #search-wp{ display: none;}
+
+    /* BREADCRUMB  */
+
+    #breadcrumb-wp{
+        display: none;
+    }
+
+    /*MAIN CONTENT*/
+
+    /* PRODUCT-CARDS */
+    .product-cards>.product-container{
+        width: calc(50% - 5px);
+    }
+
+    /* PRODUCT CATEGORIES PRODUCT CARDS  */
+
+    #list-product-wp .product-cards {
+        margin-left: -10px;
+    }
+
+    #list-product-wp .product-container {
+        width: calc(50% - 10px);
+        margin-left: 10px;
+    }
+
+    #list-product-wp .section-detail .list-item li{ width: 49%; margin-right: 2%; margin-bottom: 2%;}
+    #list-product-wp .section-detail .list-item li:nth-child(3n){ margin-right: 2%;}
+    #list-product-wp .section-detail .list-item li:nth-child(4n){ margin-right: 2%;}
+    #list-product-wp .section-detail .list-item li:nth-child(2n){ margin-right: 0!important;}
+
+    /* PRODUCT DETAIL  */
+
+    #detail-product-wp .thumb-wp #main-thumb{
+        display: none;
+    }
+
+    #detail-product-wp .thumb-wp{
+        justify-content: space-around;
+        margin-bottom: 30px;
+    }
+
+    .list-thumb-container{
+        width: 315px;
+        height: 315px;
+    }
+
+    .list-thumb-container .slider-nav-col{
+        display: none;
+    }
+
+    .list-thumb-container .slick-slide{
+        width: 315px !important;
+        height: 315px !important;
+        border: 1px solid #e4e7ed;
+    }
+
+    .list-thumb-container .slick-slide a {
+        display: block;
+        width: 100%;
+        height: 315px !important;
+    }
+
+    /* SLIDERS  */
+    .slider-nav-4, .slider-nav-3{
+        display: none;
+    }
+
+    /*DETAIL PRODUCT*/
+    #detail-product-wp .add-cart{ font-size: 14px;}
+    /*DETAIL BLOG*/
+    #detail-blog-wp .section-title{ font-size: 21px;}
+
+
+    /*DETAIL PRODUCT*/
+    #same-category-wp .section-title:before, #same-category-wp .section-title:after{ display: none;}
+    /*CART & CHECK OUT*/
+    .cart-page .inf-cart-wp table tfoot tr td.actions{ padding: 15px 0px;}
+    .table-responsive .table thead tr td, .table-responsive .table tfoot tr td{ padding: 15px 25px;}
+    .cart-page #to-checkout{ width: 50%;}
+    .cart-page .cart-wp table tbody tr td{ padding: 10px 0px;}
+    #customer-info-wp .form-row{ padding-bottom: 20px;}
+    #customer-info-wp .form-row:last-child{ padding-bottom: 0!important;}
+    .checkout-page #main-content .section:nth-child(2){ padding-left: 0px; margin-top: 20px;}
+    .checkout-page .section{ width: 100%!important;}
+    #customer-info-wp{ margin-right: 0!important; padding-bottom: 50px;}
+    #order-review-wp{ margin-left: 0!important;}
+    /*DETAIL NEWS*/
+    #list-news-wp .thumb{ width: 40%;}
+    #list-news-wp .info{ width: 60%;}
+    #list-news-wp .info .title{ font-size: 21px; line-height: 26px;}
+    #list-news-wp .info .desc{ line-height: 24px;}
+}
+
+@media screen and (max-width: 414px){
+    /*HEADER*/
+    #main-menu-wp{ display: none;}
+
+    .header-search{
+        display: none;
+    }
+
+    /*MAIN CONTENT*/
+    .home-page#main-content-wp{ padding-top: 0;}
+    #slider-wp{ display: none;}
+    #support-wp .section-detail .list-item li{ width: 100%; margin-bottom: 25px;}
+    #support-wp .section-detail .list-item li:before{ display: none; }
+    .home-page #main-content-wp{ padding-top: 0;}
+    #main-content-wp{ padding-bottom: 50px;}
+    #feature-product-wp .list-item li .action a, #list-product-wp .list-item li .action a, #same-category-wp .list-item li .action a{ padding: 2px 5px;}
+    #feature-product-wp .list-item li .price, #list-product-wp .list-item li .price, #same-category-wp .list-item li .price{ font-size: 12px!important;}
+    #feature-product-wp .list-item li .product-name, #list-product-wp .list-item li .product-name, #same-category-wp .list-item li .product-name{
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -moz-line-clamp: 1;
+        -o-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        -o-box-orient: vertical;
+        max-height: 100%;
+        overflow: hidden;
+    }
+    /*DETAIL PRODUCT*/
+    .thumb-respon-wp{ width: 100%!important; margin-bottom: 15px;}
+    #detail-product-wp .info{ padding-left: 0!important; width: 100%;}
+    #detail-product-wp .info .num-product{ margin-bottom: 20px;}
+    #detail-product-wp .info .price{ margin-bottom: 25px;}
+    #detail-product-wp .add-cart{ padding: 10px 25px;}
+    /*BLOG*/
+    #list-blog-wp .info .title{ font-size: 16px; line-height: 24px; font-family: 'Roboto Medium';}
+    #list-blog-wp .info .desc{ line-height: 21px;}
+    #list-blog-wp .info{ padding-left: 15px;}
+    /*DETAIL BLOG*/
+    #detail-blog-wp .section-title{ font-size: 18px; line-height: 24px;}
+    /*CHECKOUT*/
+    #customer-info-wp .form-row .form-col input[type="text"], #customer-info-wp .form-row .form-col input[type="email"], #customer-info-wp .form-row .form-col input[type="tel"], #customer-info-wp .form-row:nth-child(3) .form-col textarea{ padding: 5px 10px;}
+    #customer-info-wp .form-row{ padding-bottom: 15px;}
+    /*FOOTER*/
+
+}
+
+@media screen and (max-width: 375px){
+    /*HOME*/
+    #list-product-wp .section-detail .list-item li{ width: 100%; margin-right: 0!important; margin-bottom: 4%;}
+    #list-product-wp .section-detail .list-item li:last-child{ margin-bottom: 0!important;}
+    #feature-product-wp .list-item li .action a, #list-product-wp .list-item li .action a, #same-category-wp .list-item li .action a{ padding: 5px 20px;}
+    /*CATEGORY PRODUCT*/
+    .filter-wp form select{ padding: 5px;}
+    .filter-wp form button{ padding: 3px 10px;}
+    /*FOOTER*/
+
+    /*DETAIL PRODUCT*/
+    #menu-price-fixed{ height: 115px;}
+    #menu-price-fixed .info-product{ width: 100%; margin-bottom: 15px;}
+    #menu-price-fixed .info-product .detail, #menu-price-fixed .function-button{ float: left!important;}
+    #menu-price-fixed .function-button a{ font-size: 14px; padding: 10px 15px;}
+    #tab-menu li a{ font-size: 13px; padding: 15px;}
+    #detail-product-wp{ padding-top: 15px;}
+    .detail-product-page #add-to-cart, .detail-product-page #buy-now{ font-size: 13px; padding: 13px 23px;}
+    /*CART & CHECKOUT*/
+    .place-order-wp input[type="submit"]{ padding: 15px 30px;}
+}

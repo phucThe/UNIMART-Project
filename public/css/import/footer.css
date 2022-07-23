@@ -1,0 +1,104 @@
+/* ========== STYLE CHO FOOOTER ============= */
+#footer {
+    background-color: #15161D;
+    padding-top: 52px;
+    padding-bottom: 75px;
+    color: #B9BABC;
+    border-top: 3px solid #D10024;
+}
+
+#footer .box .box-head h3 {
+    background: none;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 18px;
+    color: white;
+}
+
+#footer .box .box-body {
+    padding-top: 40px;
+    font-size: 14px;
+}
+
+/* style cho phần logo */
+#footer .logo-footer .box-head {
+    visibility: hidden;
+}
+
+#footer .box.logo-footer {
+    padding-right: 15px;
+}
+
+/*style cho about us*/
+#footer .box.about-us {
+    padding-right: 180px;
+    padding-left: 15px;
+}
+
+#footer .box.about-us a {
+    color: #4db2ec;
+}
+
+/* style cho phần follow */
+#footer .box.follow-us {
+    padding-left: 15px;
+}
+
+ul.list-social li{
+    text-align: center;
+}
+
+ul.list-social li a {
+    background-color: #D10024;
+    padding: 6px 12px;
+    color: white;
+    display: block;
+    height: 36px;
+    width: 36px;
+    box-sizing: border-box;
+}
+
+/* ul.list-social li:hover a{
+    color: #4db2ec;
+} */
+ul.list-social li {
+    margin-left: 15px;
+}
+
+ul.list-social li:first-child {
+    margin-left: 0px;
+}
+
+/* ========== STYLE CHO COPYRIGHT ============= */
+#wp-copy-right {
+    background: #1E1F29;
+    color: white;
+}
+
+#wp-copy-right div {
+    text-align: center;
+}
+
+/* style cho phần copyright */
+#wp-copy-right p.copy-right {
+    margin-bottom: 0px;
+    font-size: 14px;
+    padding: 12px 0px;
+
+}
+
+ul#footer-menu li a {
+    display: block;
+    font-size: 14px;
+    color: #f3f3f3;
+    padding: 12px 13px;
+}
+
+ul#footer-menu li:last-child a {
+    padding-right: 0px;
+}
+
+ul#footer-menu li:hover a {
+    color: #4db2ec;
+    text-decoration: none;
+}

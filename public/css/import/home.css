@@ -1,0 +1,412 @@
+/*MAIN CONTENT*/
+#main-content-wp {
+    background: #f7f7f7;
+    padding-top: 25px;
+    padding-bottom: 75px;
+}
+
+.main-content {
+    width: 75%;
+    margin-left: 2%;
+}
+
+.sidebar {
+    width: 23%;
+}
+
+#slider-wp .item img {
+    width: 100% !important
+}
+
+#category-product-wp {
+    border: 1px solid #ececec;
+}
+
+#selling-wp,
+#banner-wp,
+#filter-product-wp {
+    border: 1px solid #ececec;
+    margin-top: 25px;
+}
+
+#category-product-wp .section-title,
+#selling-wp .section-title,
+#filter-product-wp .section-title {
+    display: block;
+    font-size: 20px;
+    text-transform: uppercase;
+    /* background: #d10024; */
+    background: #15161D;
+    color: #fff;
+    padding: 15px;
+    border-bottom: 3px solid #d10024;
+}
+
+#category-product-wp .section-detail {
+    background: #fff;
+}
+
+#category-product-wp .list-item {
+    background: #fff;
+}
+
+#category-product-wp .list-item li a {
+    display: block;
+    color: #333;
+    padding: 8px 20px;
+    border-bottom: 1px solid #eee;
+}
+
+#category-product-wp .list-item li a:hover,
+#category-product-wp .list-item li a:focus,
+#category-product-wp .list-item li.active>a {
+    color: #d10024;
+}
+
+#category-product-wp .list-item li a::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #D10024;
+    transition: 0.2s all;
+}
+
+#category-product-wp .list-item li a:hover:after,
+#category-product-wp .list-item li a:focus:after,
+#category-product-wp .list-item li.active>a:after {
+    width: 100%;
+}
+
+#category-product-wp .list-item li:last-child a {
+    border-bottom: none;
+}
+
+/* ========================================= Sản phẩm bán chạy ==================================================== */
+
+#selling-wp .section-detail {
+    background: #fff;
+}
+
+#selling-wp .section-detail .list-item {
+    padding: 10px;
+}
+
+#selling-wp .section-detail .list-item li {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#selling-wp .section-detail .list-item li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* ============================================== Slider ============================================= */
+
+#slider-wp-1 .section-detail.slider-1 div img {
+    display: block;
+    width: 100%;
+    margin: 0px;
+}
+
+#slider-wp-1 .slick-dots{
+    position: absolute;
+    bottom: 20px;
+}
+
+#slider-wp-1 .slick-dots li{
+    height: 15px;
+    width: 15px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+#slider-wp-1 .slick-dots li button::before{
+    visibility: hidden;
+}
+
+#slider-wp-1 .slick-dots li.slick-active{
+    background-color: white;
+
+}
+
+/* ======================================= Hỗ trợ ========================================= */
+#support-wp {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#support-wp .section-detail {
+    background: #15161D;
+    /* background-color: #D10024; */
+    padding: 15px 0px;
+}
+
+#support-wp .section-detail .list-item li {
+    float: left;
+    width: 20%;
+    text-align: center;
+    position: relative;
+}
+
+#support-wp .section-detail .list-item li:before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    right: 0px;
+    width: 1px;
+    height: 75%;
+    background: #ddd;
+    transform: translateY(-50%);
+}
+
+#support-wp .section-detail .list-item li:last-child:before {
+    display: none;
+}
+
+#support-wp .section-detail .list-item li .icon {
+    margin-bottom: 10px;
+}
+
+#support-wp .section-detail .list-item li .icon i {
+    display: block;
+    font-size: 40px;
+    color: #fff;
+}
+
+#support-wp .section-detail .list-item li .title {
+    font-size: 14px;
+    line-height: normal;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+#support-wp .section-detail .list-item li .desc {
+    font-size: 12px;
+    /* font-family: 'Roboto Light'; */
+    color: #8e8e8e;
+    line-height: normal;
+}
+
+.section-head {
+    margin: 0px 0px 20px 0px;
+}
+
+.section-title {
+    font-size: 21px;
+    text-transform: uppercase;
+    line-height: normal;
+
+}
+
+#feature-product-wp .section-detail .slick-list,
+#new-product-wp .section-detail .slick-list {
+    padding-bottom: 70px;
+}
+
+#feature-product-wp .section-detail .list-item li {
+    border: 1px solid transparent;
+}
+
+#feature-product-wp .section-detail .list-item li:hover {
+    border: 1px solid #ddd;
+}
+
+/* ============================== BLOG ================================= */
+#list-new-post-wp{
+    margin-top: 70px;
+}
+
+.slider-3 .slick-track
+{
+    display: flex !important;
+    margin-left: -10px;
+}
+
+.slider-3 .slick-track .slick-slide
+{
+    height: inherit !important;
+    margin-left: 10px;
+}
+
+.slider-3 .slick-track .slick-slide{
+    border: 1px solid transparent;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.slider-3 .slick-track .slick-slide:hover{
+    border-color: #d10024;
+}
+
+.slider-3 .slick-track .slick-slide>div{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-container{
+    flex: 1;
+    display: flex !important;
+    flex-direction: column;
+}
+
+.post-container:hover .post-img img{
+    transform: scale(1.1);
+    transition: transform 0.25s;
+}
+
+.post-container:hover .post-info .post-title a {
+    color: #d10024;
+}
+
+.post-container .post-img {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: #E4E7ED;
+    flex-shrink: 0;
+}
+
+.post-container .post-img:hover img{
+    transform: scale(1.1);
+    transition: transform 0.25s;
+}
+
+.post-container .post-img>a{
+    display: block;
+    height: 159px;
+}
+
+.post-container .post-img>a::after {
+    content: "";
+    background-color: #D10024;
+    opacity: 0.9;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -40%;
+    transform: skewX(-30deg);
+    cursor: auto;
+}
+
+.post-container .post-img>a img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+.post-container .post-img .body{
+    width: 75%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.post-container .post-img .body {
+    padding: 30px 20px;
+}
+
+.post-container .post-img .body h3,
+.post-container .post-img .body a {
+    color: white;
+}
+
+.post-container .post-img .body h3{
+    font-size: 22px;
+}
+
+.post-container .post-info {
+    flex: 1 0;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-container .post-date {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #8D99AE;
+}
+
+.post-container .post-title{
+    margin-bottom: 15px;
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+}
+
+.post-container .post-title a {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+}
+
+.post-container .post-desc{
+    margin-top: auto;
+    border-top: 1px solid #e4e7ed;
+    padding-top: 15px;
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+}
+
+/* SIDEBAR MENU */
+
+#category-product-wp .section-title,
+#selling-wp .section-title{
+    font-size: 18px;
+}
+
+#category-product-wp .list-item li {
+    position: relative;
+}
+
+#category-product-wp .list-item li .sub-menu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: 265px;
+    z-index: 1000;
+    border: 1px solid #ececec;
+    background: #fff;
+}
+
+#category-product-wp .list-item li:hover>.sub-menu {
+    display: block;
+}
+
+#category-product-wp .list-item li .arrow {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    color: #666;
+}
+
+#selling-wp{
+    margin-bottom: 30px;
+}
