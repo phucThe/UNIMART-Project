@@ -10,4 +10,4 @@ Phần Client: Hỗ trợ đối tượng người dùng khách hàng đặt mua
 Tài khoản Admin toàn quyền:
 
 Email: superuser24139@gmail.com
-Password: sup3rUs3r24139
+Mật khẩu: sup3rUs3r24139
