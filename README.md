@@ -7,6 +7,8 @@ Phần Admin: Hỗ trợ người dùng quản lý Sản phẩm, Đơn hàng, Sl
 
 Phần Client: Hỗ trợ đối tượng người dùng khách hàng đặt mua sản phẩm có trên hệ thống
 
+Cần download file database ở bên dưới để có thể test
+
 File database: https://drive.google.com/file/d/1euBzAlpiCkC26AzsYMYYYKtW0zifePc_/view?usp=sharing
 
 Tài khoản Admin toàn quyền:
