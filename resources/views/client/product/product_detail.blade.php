@@ -119,7 +119,10 @@
                                                     <li>
                                                         <label>
                                                             <input type="radio" name="product_color"
-                                                                value="{{ $color->color_id }}" data-image="{{$color->img_path}}" hidden>
+                                                                value="{{ $color->color_id }}"
+                                                                @if ($product->product_thumbs()->where('color_id', $color->color_id)->count() > 0) data-image="{{ $product->product_thumbs()->where('color_id', $color->color_id)->first()->img_path }}" @endif
+                                                                @if ($product->product_colors()->count() == 1) @checked(true) @endif
+                                                                hidden>
                                                             <div class="color-choosing-box">
                                                                 <span>{{ $color->name }}</span>
                                                                 <div class="color-mark"></div>
