@@ -140,24 +140,10 @@ class AdminOrderController extends Controller
             ]
         );
 
-        // Huỷ đơn hàng không được xác nhận trong 1 giờ
-        $unverified_orders = Order::where('is_active', '0')->get();
-        if ($unverified_orders->count() > 0) {
-            foreach ($unverified_orders as $order) {
-                $active_time = strtotime($order->first()->created_at);
-                if (time() - $active_time >= 3600) {
-                    $order->update([
-                        'is_active' => '1',
-                        'status' => $this->canceled_status,
-                    ]);
-                }
-            }
-        }
-
         $order = Order::create([
             'total' => (int)Cart::subtotal(0, "", ""),
-            'status' => $this->not_active_status,
-            'is_active' => '0',
+            'status' => $this->processing_status,
+            'is_active' => '1',
             'active_token' => Hash::make($request->fullname . time()),
         ]);
 
