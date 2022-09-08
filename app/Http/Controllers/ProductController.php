@@ -121,10 +121,7 @@ class ProductController extends Controller
     {
         $product = Product::find($id);
 
-        $color_list = Color::leftJoin('product_thumbs', 'product_thumbs.color_id','=','colors.id')
-        ->select('colors.id as color_id','colors.name','product_thumbs.img_path')
-        ->where('product_thumbs.product_id',$id)
-        ->get();
+        $color_list = $product->product_colors()->select('colors.id as color_id','name')->get();
 
         $product->increment('view', 1);
         $product_thumb_list = $product->product_thumbs()->orderBy('order_id')->get();
