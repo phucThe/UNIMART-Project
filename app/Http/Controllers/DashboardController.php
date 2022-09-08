@@ -26,7 +26,7 @@ class DashboardController extends Controller
             ->where([
                 ['orders.is_active', '1'],
             ])
-            ->orderBy('orders.updated_at', 'desc')
+            ->orderBy('orders.created_at', 'desc')
             ->paginate(10);
 
         $order_status_count = [];
