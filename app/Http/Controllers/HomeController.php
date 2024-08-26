@@ -37,13 +37,28 @@ class HomeController extends Controller
         join('order_details','products.id','=','order_details.product_id')
         ->join('product_thumbs','product_thumbs.product_id','=','products.id')
         ->leftJoin('product_cats','products.product_cat_id','=','product_cats.id')
-        ->selectRaw("products.id, sum(order_details.qty) as total_qty, product_cats.slug as product_cat_slug, product_cats.name as product_cat_name, products.name, products.price, product_thumbs.img_path")
+        ->selectRaw(
+            "products.id, 
+            sum(order_details.qty) as total_qty, 
+            product_cats.slug as product_cat_slug, 
+            product_cats.name as product_cat_name, 
+            products.name, 
+            products.price, 
+            product_thumbs.img_path"
+        )
         ->where([
             ['product_thumbs.order_id', 0],
             ['products.status', 1],
         ])
-        ->groupBy(['products.id','product_cats.name','products.name','products.price','product_thumbs.img_path', 'product_cats.slug'])
-        ->orderBy('order_details.qty')
+        ->groupBy([
+            'products.id',
+            'product_cats.name',
+            'products.name',
+            'products.price',
+            'product_thumbs.img_path', 
+            'product_cats.slug'
+        ])
+        ->orderBy('total_qty')
         ->limit(8)
         ->get();
 
